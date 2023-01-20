@@ -1,5 +1,12 @@
 function fibonacci(n) {
-  // type your code here
+
+  // if n is 0 or 1, return 0 or 1 respectively
+  if (n < 2) {
+    return n;
+  }
+
+  // calculate each of two last n's separately with recursion and make a sum
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 if (require.main === module) {
